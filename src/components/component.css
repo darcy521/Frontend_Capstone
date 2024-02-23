@@ -1,0 +1,96 @@
+.nav-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-content {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(25px, 120px));
+    /* grid-auto-columns: repeat(7, minmax(40px, 120px)); */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.footer-container ul {
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .nav-container {
+        grid-template: "logo toggle"
+                       "navContent navContent";
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto auto;
+    }
+
+    .logo {
+        grid-area: logo;
+        justify-content: start;
+    }
+
+    .nav-toggle {
+        display: grid;
+        grid-area: toggle;
+        justify-content: center;
+    }
+
+    .nav-content {
+        display: none;
+    }
+
+    .nav-content.active {
+        display: grid;
+        grid-area: navContent;
+        grid-template-rows: repeat(6, 35px);
+        grid-template-columns: 100%;
+        text-align: start;
+        padding-left: 3%;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template: "footer-content1 footer-content2 footer-content3"
+                       "footer-logo footer-logo footer-logo";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .footer-content1 {
+        display: grid;
+        grid-area: footer-content1;
+    }
+
+    .footer-content2 {
+        display: grid;
+        grid-area: footer-content2;
+    }
+
+    .footer-content3 {
+        display: grid;
+        grid-area: footer-content3;
+    }
+
+    .footer-logo {
+        display: grid;
+        grid-area: footer-logo;
+        justify-content: end;
+        padding-right: 3%;
+    }
+}
