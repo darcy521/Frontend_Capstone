@@ -1,29 +1,35 @@
 import React, { useState } from "react";
 import './component.css';
+import { Link, BrowserRouter as Router} from "react-router-dom";
+import Container from "./Container";
 
 export default function Nav() {
   const [isNavContentVisible, setIsNavContentVisible] = useState(false);
 
   return (
-    <nav>
-      <ul className="nav-container">
-        <li className="logo">
-          <img src="Logo.svg" alt="logo" />
-        </li>
-        <li className="nav-toggle" id="navToggle" onClick={() => setIsNavContentVisible(!isNavContentVisible)}>
-          <img src='bars-solid.svg' alt="toggle" height={40} width={40}/>
-        </li>
-        <li>
-          <ul className={`nav-content ${isNavContentVisible ? 'active' : ''}`} id="navContent">
-            <li><a href="/">Home</a></li>
-            <li><a href="/About">About</a></li>
-            <li><a href="/Menu">Menu</a></li>
-            <li><a href="/Reservations">Reservations</a></li>
-            <li><a href="/OrderOnline">Order Online</a></li>
-            <li><a href="/Login">Login</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    <Router>
+      <nav>
+        <Container>
+        <ul className="nav-container">
+          <li className="logo">
+            <img src="Logo.svg" alt="logo" />
+          </li>
+          <li className="nav-toggle" id="navToggle" onClick={() => setIsNavContentVisible(!isNavContentVisible)}>
+            <img src='bars-solid.svg' alt="toggle" height={40} width={40}/>
+          </li>
+          <li>
+            <ul className={`nav-content ${isNavContentVisible ? 'active' : ''}`} id="navContent">
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/">About</Link></li>
+              <li><Link to="/">Menu</Link></li>
+              <li><Link to="/booking">Reservations</Link></li>
+              <li><Link to="/">Order Online</Link></li>
+              <li><Link to="/">Login</Link></li>
+            </ul>
+          </li>
+        </ul>
+        </Container>
+      </nav>
+    </Router>
   );
 }

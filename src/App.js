@@ -3,15 +3,16 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import Main from './components/Main';
 import Footer from './components/Footer';
+import { Fragment } from 'react';
 
 function App() {
   return (
-    <div className="App">
+    <Fragment className="App">
       <Header />
       <Nav />
       <Main />
       <Footer />
-    </div>
+    </Fragment>
   );
 }
 

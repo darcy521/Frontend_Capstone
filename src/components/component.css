@@ -29,7 +29,260 @@
 }
 
 .footer-container ul {
-    text-align: center;
+    text-align: start;
+}
+
+.component-container {
+    padding-left: 291px;
+    padding-right: 291px;
+}
+
+.callToAction-container {
+    width: 100%;
+    background-color: #495E57;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.callToAction-text {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    justify-content: center;
+    text-wrap: wrap;
+
+    h2 {
+        color: var(--secondary-color1);
+        font-size: 56px;
+        font-family: 'Roboto', serif;
+        font-weight: 500;
+    }
+
+    h3 {
+        color: var(--secondary-color3);
+        font-size: 32px;
+        font-family: 'Markazi Text', serif;
+    }
+
+    h4 {
+        color: var(--secondary-color3);
+        font-size: 20px;
+        max-width: 422px;
+        font-family: 'Roboto', serif;
+        font-weight: regular;
+    }
+
+    button {
+        width: 200px;
+        height: 60px;
+        border-radius: 16px;
+        background-color: var(--primary-color2);
+        border: none;
+        margin-bottom: 2%;
+        font-size: 18px;
+        font-family: 'Roboto', serif;
+        font-weight: 400;
+    }
+}
+
+
+.callToAction-img {
+    text-align: end;
+}
+
+.special-title-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        width: 200px;
+        height: 60px;
+        border-radius: 16px;
+        background-color: var(--primary-color2);
+        border: none;
+        font-size: 18px;
+        font-family: 'Roboto', serif;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-family: 'Karla', serif;
+    }
+}
+
+.card-container {
+    width: 265px;
+    height: 439px;
+    border: none;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 40% 60%;
+
+    img {
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+}
+
+.card-textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: start;
+    background-color: var(--secondary-color3);
+    padding: 0% 2% 2% 2%;
+
+    h5 {
+        font-family: 'Karla', serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--primary-color1);
+    }
+
+    button {
+        font-size: 16px;
+        font-family: 'karla', serif;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+}
+
+.card-name-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+        font-family: 'Markazi Text', serif;
+        font-weight: 500;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    h4 {
+        font-family:'Karla', serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: var(--secondary-color1);
+    }
+}
+
+.special-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.special-cards > :nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-description-button {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+
+    h5 {
+        margin: 0;
+    }
+
+    button {
+        padding-bottom: 10%;
+    }
+}
+
+.customerSay-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chicago-container {
+    width: 100%;
+    max-height: 80vh;
+    min-height: 70vh;
+    /* background-color: #495E57; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.chicago-text {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    justify-content: center;
+    text-wrap: wrap;
+
+    h2 {
+        /* color: var(--secondary-color1); */
+        font-size: 64px;
+        font-family: 'Markazi', serif;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    h3 {
+        /* color: var(--secondary-color3); */
+        font-size: 40px;
+        font-family: 'Markazi Text', serif;
+        font-weight: normal;
+        margin-top: 1%;
+    }
+
+    h4 {
+        /* color: var(--secondary-color3); */
+        font-size: 20px;
+        max-width: 422px;
+        font-family: 'Roboto', serif;
+        font-weight: regular;
+    }
+}
+
+.chicago-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.chicago-img img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.chicagoImage1 {
+    z-index: 1;
+    top: 40%;
+    right: 200px;
+}
+
+.chicagoImage2 {
+    z-index: 2;
+    top: 20%;
+    right: 0;
 }
 
 @media screen and (max-width: 700px) {

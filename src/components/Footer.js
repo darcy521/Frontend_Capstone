@@ -1,31 +1,37 @@
 import React from 'react';
 import './component.css';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+import Container from './Container';
 
 export default function Footer() {
   return (
+    <Container>
     <footer className='footer-container'>
-      <ul className='footer-logo'><img src='logo.svg' alt='fooer-logo'/></ul>
-      <ul className='footer-content1'>
-        <li>Doormat Navigation</li>
-        <li><a href="/">Home</a></li>
-        <li><a href="/About">About</a></li>
-        <li><a href="/Menu">Menu</a></li>
-        <li><a href="/Reservations">Reservations</a></li>
-        <li><a href="/OrderOnline">Order Online</a></li>
-        <li><a href="/Login">Login</a></li>
-      </ul>
-      <ul className='footer-content2'>
-        <li>Contact</li>
-        <li><a href="/Address">Address</a></li>
-        <li><a href="/phoneNumber">phone number</a></li>
-        <li><a href="/email">email</a></li>
-      </ul>
-      <ul className='footer-content3'>
-        <li>Social Media Links</li>
-        <li><a href="/Address">Address</a></li>
-        <li><a href="/phoneNumber">phone number</a></li>
-        <li><a href="/email">email</a></li>
-      </ul>
+      <Router>
+        <ul className='footer-logo'><img src='logo.svg' alt='fooer-logo'/></ul>
+        <ul className='footer-content1'>
+          <li>Doormat Navigation</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/About">About</Link></li>
+            <li><Link to="/Menu">Menu</Link></li>
+            <li><Link to="/Reservations">Reservations</Link></li>
+            <li><Link to="/OrderOnline">Order Online</Link></li>
+            <li><Link to="/Login">Login</Link></li>
+        </ul>
+        <ul className='footer-content2'>
+          <li>Contact</li>
+          <li><Link to="/Address">Address</Link></li>
+          <li><Link to="/phoneNumber">phone number</Link></li>
+          <li><Link to="/email">email</Link></li>
+        </ul>
+        <ul className='footer-content3'>
+          <li>Social Media Links</li>
+          <li><Link to="/Address">Address</Link></li>
+          <li><Link to="/phoneNumber">phone number</Link></li>
+          <li><Link to="/email">email</Link></li>
+        </ul>
+      </Router>
     </footer>
+    </Container>
   )
 }
