@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Container from "./Container";
 import Card from "./Card";
 
@@ -54,6 +54,7 @@ export default function Specials() {
               description={card.description}
               buttonText={card.buttonText}
               buttonImg={card.buttonImg}
+              key={card.title}
             />
           );
         })}

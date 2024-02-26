@@ -36,9 +36,9 @@ export default function CustomersSay() {
       <section className="customerSay-container">
         <h2>{title}</h2>
         <div className="customerSay-card">
-        {contents.map((content) => {
+        {contents.map((content, index) => {
           return (
-            <div>
+            <div key={index}>
               <h4>{content.rating}</h4>
               <img src={content.img} alt="rating" />
               <h4>{content.name}</h4>

@@ -1,6 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "./component.css";
 import Container from "./Container";
+import { useNavigate } from "react-router";
 
 export default function CallToAction() {
   const content = {
@@ -12,6 +13,12 @@ export default function CallToAction() {
     buttonText: "Reserve a Table",
   };
 
+  let navigate = useNavigate();
+
+  const handleClicked = () => {
+    navigate('/booking');
+  }
+
   return (
     <Container backgroundColor="#495E57">
       <section className="callToAction-container">
@@ -19,7 +26,7 @@ export default function CallToAction() {
           <h2>{content.title}</h2>
           <h3>{content.location}</h3>
           <h4>{content.description}</h4>
-          <button>{content.buttonText}</button>
+          <button onClick={handleClicked}>{content.buttonText}</button>
         </div>
         <div className="callToAction-img">
           <img src={content.image} width={360} height={431} alt="callToActionImage"/>

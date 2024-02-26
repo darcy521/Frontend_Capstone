@@ -285,6 +285,57 @@
     right: 0;
 }
 
+.booking-form {
+    display: block;
+    margin: auto;
+}
+
+.confirm-container {
+    min-height: 80vh;
+    display: block;
+    margin: auto;
+    /* background-color: aqua; */
+    text-align: center;
+
+    button {
+        width: 200px;
+        height: 60px;
+        border-radius: 16px;
+        background-color: var(--primary-color2);
+        border: none;
+        margin-bottom: 2%;
+        font-size: 18px;
+        font-family: 'Roboto', serif;
+        font-weight: 400;
+    }
+}
+
+.submit-button {
+    width: 200px;
+    height: 60px;
+    border-radius: 16px;
+    background-color: var(--primary-color2);
+    border: none;
+    margin-bottom: 2%;
+    font-size: 18px;
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
+
+.bookingform-timeslots {
+    display: flex;
+    flex-wrap: wrap;
+    width:20vw;
+}
+
+.timeslot {
+    margin: 5px;
+}
+
 @media screen and (max-width: 700px) {
     .nav-container {
         grid-template: "logo toggle"

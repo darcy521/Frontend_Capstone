@@ -7,7 +7,7 @@ import { Fragment } from 'react';
 
 function App() {
   return (
-    <Fragment className="App">
+    <Fragment>
       <Header />
       <Nav />
       <Main />
