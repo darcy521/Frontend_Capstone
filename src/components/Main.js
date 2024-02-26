@@ -3,7 +3,7 @@ import HomePage from "../pages/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BookingPage from "../pages/BookingPage";
 import { fetchAPI, submitAPI } from "../utils/FakeAPI";
-import ConfirmBooking from "./ConfirmBooking";
+import ConfirmBooking from "./ConfirmBooking"
 
 const initializeState = {
   date: "",
