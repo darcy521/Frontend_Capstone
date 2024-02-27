@@ -30,6 +30,8 @@ export default function CallToAction() {
         </div>
         <div className="callToAction-img">
           <img src={content.image} width={360} height={431} alt="callToActionImage"/>
+          {/* button will appear only when screen width smaller than 700px */}
+          <button onClick={handleClicked}>{content.buttonText}</button>
         </div>
       </section>
     </Container>

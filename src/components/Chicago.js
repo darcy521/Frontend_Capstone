@@ -8,7 +8,8 @@ export default function Chicago() {
     location: "Chicago",
     description:
       "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ",
-    image: "restauranfood.jpg",
+    imageA: "restaurant chef B.jpg",
+    imageB: "Mario and Adrian A.jpg",
   };
 
   return (
@@ -21,16 +22,16 @@ export default function Chicago() {
         </div>
         <div className="chicago-img">
           <img
-            src={content.image}
-            width={272}
-            height={338}
+            src={content.imageA}
+            width={350}
+            // height={338}
             alt="chicagoImage1"
             className="chicagoImage1"
           />
           <img
-            src={content.image}
-            width={272}
-            height={338}
+            src={content.imageB}
+            width={350}
+            // height={338}
             alt="chicagoImage2"
             className="chicagoImage2"
           />

@@ -16,6 +16,21 @@
   pointer-events: none;
 }
 
+hr {
+  position: absolute;
+  left: 0%;
+  border: none; /* Removes the default border */
+  height: 1px; /* Sets the height of the line */
+  width: 100vw;
+  background-color: gray;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

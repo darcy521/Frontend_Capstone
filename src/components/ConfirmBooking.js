@@ -24,7 +24,7 @@ export default function ConfirmBooking() {
         height={200}
       />
       <h3>{confirmText.text}</h3>
-      <button onClick={handleClicked}>{confirmText.buttonText}</button>
+      <button onClick={handleClicked} className="confirm-button">{confirmText.buttonText}</button>
     </section>
   );
 }

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./component.css";
 import Container from "./Container";
 import { useNavigate } from "react-router";
-import { useFormik } from "formik";
 
 export default function BookingForm(props) {
   const [formValue, setFormValue] = useState({
@@ -48,7 +47,7 @@ export default function BookingForm(props) {
     if (props.isConfirmedBooking) {
       navigate("/confirmBooking");
     }
-  }, [props.isConfirmedBooking]);
+  }, [props.isConfirmedBooking, navigate]);
 
   // submit form data
   const onSubmit = async (e) => {
@@ -136,7 +135,7 @@ export default function BookingForm(props) {
 
   return (
     <>
-      <Container>
+      <Container borderTop={'lightgray solid 1px'} borderBottom={'lightgray solid 1px'} backgroundColor={'#495E57'}>
         <form
           style={{ display: "grid", maxWidth: "200px", gap: "20px" }}
           onSubmit={onSubmit}
@@ -158,13 +157,18 @@ export default function BookingForm(props) {
           )}
           <label htmlFor="res-time">Choose time</label>
           {isLoading ? (
-            <p>Choose date to load available timeslots...</p>
+            <input
+            type="text"
+            placeholder="Choose date to load available timeslots..."
+            disabled={true}
+          />
           ) : (
             <ul className="bookingform-timeslots">
               {props.availableTimes.availableTimesByDate.map(
                 (availableTime, index) => (
                   <li key={index} className="timeslot" id="res-time">
                     <button
+                      className={`timeslots-button ${formValue.time === availableTime ? 'active' : ''}`}
                       type="button"
                       onClick={() => handleTimeSelection(availableTime)}
                     >
