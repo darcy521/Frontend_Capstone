@@ -23,9 +23,9 @@ export default function Footer() {
         </ul>
         <ul className='footer-content3'>
           <li>Social Media Links</li>
-          <li><Link to="/https://www.facebook.com/LittleLemonRHW/"><img src='facebook.png' alt='facebook' width={35}/></Link></li>
-          <li><Link to="/https://twitter.com/LittleLemonRHW/"><img src='instagram.png' alt='instagram' width={35}/></Link></li>
-          <li><Link to="/https://www.instagram.com/LittleLemonRHW/"><img src='twitter.png' alt='twitter' width={35}/></Link></li>
+          <li>&nbsp;&nbsp;<Link to="https://www.facebook.com/LittleLemonRHW/"><img src='facebook.png' alt='facebook' width={35}/></Link></li>
+          <li>&nbsp;&nbsp;<Link to="https://twitter.com/LittleLemonRHW/"><img src='instagram.png' alt='instagram' width={37}/></Link></li>
+          <li>&nbsp;&nbsp;<Link to="https://www.instagram.com/LittleLemonRHW/"><img src='twitter.png' alt='twitter' width={35}/></Link></li>
         </ul>
         <div className="copyright">
           <hr />

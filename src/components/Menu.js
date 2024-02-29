@@ -14,7 +14,7 @@ export default function Menu(props) {
     image2: 'image2.jpg',
     image4: 'image4.jpg',
     image6: 'image6.jpeg',
-    image8: 'image8.webp',
+    image8: 'image8.jpg',
   };
 
   return (
@@ -31,8 +31,8 @@ export default function Menu(props) {
           <div className="menu-image-area-left">
           {Object.keys(imgContent1).map((image) => {
             return (
-              <img src={imgContent1[image]} alt={image} key={image} className='menuImg' />
-            )
+               <img src={imgContent1[image]} alt={image} key={image} className='menuImg' />
+          )
           })}
           </div>
           <div className="menu-image-area-right">
