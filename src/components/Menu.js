@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "./Container";
 import './component.css';
+import pdf from './Little-Lemon-All-day-menu-2024_compressed.pdf';
 
 export default function Menu(props) {
   const imgContent1 = {
@@ -21,7 +22,7 @@ export default function Menu(props) {
     <Container borderTop={props.cancelTopBorder ? '' :'gray solid 1px'} borderBottom= {'gray solid 1px'}>
       <section className="menu-container" id="menu">
           <a
-            href="Little-Lemon-All-day-menu-2024_compressed.pdf"
+            href={pdf}
             target="_blank"
             className="menu-pdf"
           >
