@@ -7,13 +7,13 @@ export default function Menu(props) {
     image1: 'image1.jpg',
     image3: 'image3.jpg',
     image5: 'image5.jpg',
-    image7: 'image7.jpeg',
+    image7: 'image7.jpg',
   };
 
   const imgContent2 = {
     image2: 'image2.jpg',
     image4: 'image4.jpg',
-    image6: 'image6.jpeg',
+    image6: 'image6.jpg',
     image8: 'image8.jpg',
   };
 

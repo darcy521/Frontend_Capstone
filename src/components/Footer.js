@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <Container>
     <footer className='footer-container'>
-        <ul className='footer-logo'><img src='logo.svg' alt='fooer-logo'/></ul>
+        <ul className='footer-logo'><img src='Logo.svg' alt='footer-logo'/></ul>
         <ul className='footer-content1'>
           <li>Doormat Navigation</li>
             <li><Link to="/">Home</Link></li>
