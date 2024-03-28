@@ -23,15 +23,11 @@ export default function Chicago() {
         <div className="chicago-img">
           <img
             src={content.imageA}
-            width={350}
-            // height={338}
             alt="chicagoImage1"
             className="chicagoImage1"
           />
           <img
             src={content.imageB}
-            width={350}
-            // height={338}
             alt="chicagoImage2"
             className="chicagoImage2"
           />
